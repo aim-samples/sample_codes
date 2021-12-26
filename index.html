@@ -1,0 +1,132 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        header {
+            background-color: #3F51B5;
+            color: white;
+            padding: 20px 40px;
+        }
+
+        footer {
+            background-color: #424242;
+            color: white;
+            padding: 20px 40px;
+        }
+
+        h1, h2, h3, h4, h5, h6 { /* all heading text*/
+            margin: 0;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .side {
+            flex: 20%;
+            max-width: 20%; /*prevent overflowing outside flex*/
+            border-right: 2px solid #BDBDBD;
+        }
+        .main {
+            flex: 80%;
+            max-width: 80%; /*prevent overflowing outside flex*/
+            padding: 10px;
+        }
+        .side ul{
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .side ul li{
+        }
+        .side ul li a{
+            display: block;
+            padding: 14px 40px;
+            text-decoration: none;
+            color: #212121;
+        }
+        .side ul li a:hover {
+            background-color: #E0E0E0;
+        }
+        .side ul li a:active {
+            background-color: #9E9E9E;
+        }
+        
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>Header</h2>
+    </header>
+
+    <div class="row">
+        <div class="side">
+            <ul>
+                <li><a href="google.com"> hello </a></li>
+                <li><a href="google.com"> hello </a></li>
+                <li><a href="google.com"> hello </a></li>
+                <li><a href="google.com"> hello </a></li>
+                <li><a href="google.com"> hello </a></li>
+                <li><a href="google.com"> hello </a></li>
+                <li><a href="google.com"> hello </a></li>
+                <li><a href="google.com"> hello </a></li>
+            </ul>
+        </div>
+        <div class="main">
+            main content
+            <ul>
+                <li><a href="google.com"> hello </a></li>
+                <li><a href="google.com"> hello </a></li>
+                <li><a href="google.com"> hello </a></li>
+                <li><a href="google.com"> hello </a></li>
+                <li><a href="google.com"> hello </a></li>
+                <li><a href="google.com"> hello </a></li>
+                <li><a href="google.com"> hello </a></li>
+                <li><a href="google.com"> hello </a></li>
+                <li><a href="google.com"> hello </a></li>
+                <li><a href="google.com"> hello </a></li>
+                <li><a href="google.com"> hello </a></li>
+                <li><a href="google.com"> hello </a></li>
+                <li><a href="google.com"> hello </a></li>
+                <li><a href="google.com"> hello </a></li>
+                <li><a href="google.com"> hello </a></li>
+                <li><a href="google.com"> hello </a></li>
+                <li><a href="google.com"> hello </a></li>
+                <li><a href="google.com"> hello </a></li>
+                <li><a href="google.com"> hello </a></li>
+                <li><a href="google.com"> hello </a></li>
+                <li><a href="google.com"> hello </a></li>
+                <li><a href="google.com"> hello </a></li>
+                <li><a href="google.com"> hello </a></li>
+                <li><a href="google.com"> hello </a></li>
+                <li><a href="google.com"> hello </a></li>
+                <li><a href="google.com"> hello </a></li>
+                <li><a href="google.com"> hello </a></li>
+                <li><a href="google.com"> hello </a></li>
+                <li><a href="google.com"> hello </a></li>
+                <li><a href="google.com"> hello </a></li>
+                <li><a href="google.com"> hello </a></li>
+                <li><a href="google.com"> hello </a></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <h3>Footer</h3>
+    </footer>
+</body>
+
+</html>
