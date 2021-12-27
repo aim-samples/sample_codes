@@ -1,0 +1,250 @@
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        header {
+            background-color: #3F51B5;
+            color: white;
+            padding: 20px 40px;
+        }
+
+        footer {
+            background-color: #424242;
+            color: white;
+            padding: 20px 40px;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            /* remove margin from all heading text*/
+            margin: 0;
+        }
+
+        .container {
+            margin: 10px 10%;
+            width: 80%;
+            background-color: #eee;
+            padding: 10px;
+        }
+
+        .col25 {
+            float: left;
+            width: 25%;
+            margin-top: 6px;
+        }
+
+        .col75 {
+            float: left;
+            width: 75%;
+            margin-top: 6px;
+        }
+
+        /* clearfix hack: Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        form {
+            width: 100%;
+        }
+
+        form h3 {
+            padding: 14px 40px;
+            flex: 100%;
+            width: 100%;
+        }
+
+        /* .row > form > label */
+        form .row label {
+            display: inline-block;
+            padding: 12px 12px 12px 0;
+        }
+
+        /*  .row > form > input     & 
+            .row > form > select    & 
+            .row > form textarea    */
+        form .row input[type=text],
+        form .row input[type=password],
+        form .row select,
+        form .row textarea {
+            padding: 10px;
+            width: 100%;
+            margin: 5px 1%;
+            resize: vertical;
+        }
+
+        /* form > .row > a */
+        form .row a {
+            text-align: center;
+            padding: 10px;
+            margin: 5px 1% 5px 0;
+            float: right;
+            /* align to right in flex with left margin auto*/
+            border: 1px solid #3F51B5;
+            color: #3F51B5;
+            text-decoration: none;
+        }
+
+        /* on hover */
+        form .row a:hover {
+            border: 1px solid #5C6BC0;
+            color: white;
+            background-color: #5C6BC0;
+        }
+
+        /* on active */
+        form .row a:active {
+            border: 1px solid #7986CB;
+            color: white;
+            background-color: #7986CB;
+        }
+
+        /* form > .row > input with type select */
+        form .row input[type=submit] {
+            padding: 10px;
+            margin: 5px 1% 5px 0;
+            float: right;
+            /* align to right in flex with left margin auto*/
+            background-color: #3F51B5;
+            color: white;
+            border: none;
+        }
+
+        /* on hover */
+        form .row input[type=submit]:hover {
+            background-color: #5C6BC0;
+        }
+
+        /* on active */
+        form .row input[type=submit]:active {
+            background-color: #7986CB;
+        }
+
+        /* form > .row > input with type reset */
+        form .row input[type=reset] {
+            padding: 10px;
+            margin: 5px 1% 5px 0;
+            float: right;
+            /* align to right in flex with left margin auto*/
+            background-color: #F44336;
+            color: white;
+            border: none;
+        }
+
+        /* on hover */
+        form .row input[type=reset]:hover {
+            background-color: #EF5350;
+        }
+
+        /* on active */
+        form .row input[type=reset]:active {
+            background-color: #E57373;
+        }
+
+        /* on screen size less than 700px */
+        @media screen and (max-width : 700px) {
+            .container {
+                width: 98%;
+                margin: 1%;
+            }
+
+            .col25,
+            .col75 {
+                padding: 0px 10px;
+                width: 100%;
+                margin: 0;
+            }
+
+            /*  all inside form > .row            
+                form > .row > a                 &
+                form > .row > input type submit &
+                form > .row > input type reset  */
+            form .row * {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>Responsive form: using float</h2>
+    </header>
+    <div class="container">
+
+        <form>
+            <h3>Login</h3>
+            <hr>
+
+            <div class="row">
+                <div class="col25">
+                    <label for="username">Username: </label>
+                </div>
+                <div class="col75">
+                    <input type="text" id="username" placeholder="Your name">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col25">
+                    <label for="password">Password: </label>
+                </div>
+                <div class="col75">
+                    <input type="password" id="password" placeholder="Your password">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col25">
+                    <label for="password">Country: </label>
+                </div>
+                <div class="col75">
+                    <select>
+                        <option>India</option>
+                        <option>USA</option>
+                        <option>England</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col25">
+                    <label for="subject">Subject: </label>
+                </div>
+                <div class="col75">
+                    <textarea id="subject" placeholder="Write something..."></textarea>
+                </div>
+            </div>
+
+            <div class="row">
+                <a href="">Register instead</a>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+    </div>
+
+
+
+</body>
+
+</html>

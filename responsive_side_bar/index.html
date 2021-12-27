@@ -25,7 +25,14 @@
             padding: 20px 40px;
         }
 
-        h1, h2, h3, h4, h5, h6 { /* remove margin from all heading text*/
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
+            /* remove margin from all heading text and paragraph*/
             margin: 0;
         }
 
@@ -33,75 +40,73 @@
             display: flex;
             flex-wrap: wrap;
         }
+
         .side {
+            padding: 10px;
             flex: 25%;
-            max-width: 25%; /*prevent overflowing outside flex*/
-            border-right: 2px solid #BDBDBD;
+            max-width: 25%;
+            /*prevent overflowing outside flex*/
+            background-color: #eee;
         }
-        
-        /*.side > ul */
-        .side ul{
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
+
+        .side * {
+            /* all childrens of .side but div*/
+            padding: 10px;
         }
-        /*.side > ul > li > a */
-        .side ul li a{ 
-            display: block;
-            padding: 14px 40px;
-            text-decoration: none;
-            color: #212121;
-        }
-        /*.side > ul > li > a:hover */
-        .side ul li a:hover {
-            background-color: #E0E0E0;
-        }
-        /*.side > ul > li > a:active */
-        .side ul li a:active {
-            background-color: #9E9E9E;
-        }
+
         .main {
             flex: 75%;
-            max-width: 75%; /*prevent overflowing outside flex*/
+            max-width: 75%;
+            /*prevent overflowing outside flex*/
             padding: 10px;
         }
-        .main * { /* all childrens of .side but div*/
+
+        .main * {
+            /* all childrens of .side but div*/
             padding: 10px;
         }
-        @media screen and (max-width : 600px){
+
+
+        @media screen and (max-width : 600px) {
             .side {
                 flex: 100%;
-                max-width: 100%; /*prevent overflowing outside flex*/
+                max-width: 100%;
+                /*prevent overflowing outside flex*/
                 border-right: none;
-                border-bottom: 2px solid #BDBDBD;
             }
+
             .main {
                 flex: 100%;
-                max-width: 100%; /*prevent overflowing outside flex*/
+                max-width: 100%;
+                /*prevent overflowing outside flex*/
                 padding: 10px;
             }
         }
-        
-
     </style>
 </head>
 
 <body>
     <header>
-        <h2>Responsive side menu</h2>
+        <h2>Responsive side bar</h2>
     </header>
 
     <div class="row">
         <div class="side">
-            <ul>
-                <li><a href="#main1"> Main Content 1 </a></li>
-                <li><a href="#main2"> Main Content 2 </a></li>
-                <li><a href="#main3"> Main Content 3 </a></li>
-            </ul>
+            <h3>About me: </h3>
+            <b>User admin sirname</b>
+            <p>user@mail.com</p>
+            <div style="height: 150px; background-color: grey;"> dummy image</div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            </p>
+
         </div>
         <div class="main">
-            <h3 id="main1">Side menu bookmarks: < click to side menu option</h3>
-            <h3 id="main1">Main content: </h3>
+            <h3>Main content: </h3>
             <div style="height: 150px; background-color: grey;"> dummy image</div>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -110,7 +115,7 @@
                 fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
                 deserunt mollit anim id est laborum.
             </p>
-            <h3 id="main2">Main content 2: </h3>
+            <h3>Main content 2: </h3>
             <div style="height: 150px; background-color: grey;"> dummy image</div>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
@@ -119,7 +124,7 @@
                 fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
                 deserunt mollit anim id est laborum.
             </p>
-            <h3 id="main3">Main content 3: </h3>
+            <h3>Main content 3: </h3>
             <div style="height: 150px; background-color: grey;"> dummy image</div>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
