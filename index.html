@@ -25,45 +25,81 @@
             padding: 20px 40px;
         }
 
-        h1, h2, h3, h4, h5, h6 { /* all heading text*/
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            /* remove margin from all heading text*/
             margin: 0;
         }
 
         .row {
+            margin: 0 10%;
+            width: 80%;
             display: flex;
             flex-wrap: wrap;
         }
-        .side {
-            flex: 20%;
-            max-width: 20%; /*prevent overflowing outside flex*/
-            border-right: 2px solid #BDBDBD;
+        .row h3 {
+            margin: 5px 0.25%;
+            padding: 14px 40px;
+            flex: 100%;
+            width: 100%;
         }
-        .main {
-            flex: 80%;
-            max-width: 80%; /*prevent overflowing outside flex*/
-            padding: 10px;
-        }
-        .side ul{
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
-        .side ul li{
-        }
-        .side ul li a{
+
+        /*.row > a */
+        .row a {
+            margin: 5px 0.25%;
             display: block;
+            flex: 49.5%;
+            width: 49.5%;
             padding: 14px 40px;
             text-decoration: none;
             color: #212121;
+            border: 1px solid #ddd;
+            border-radius: 8px;
         }
-        .side ul li a:hover {
-            background-color: #E0E0E0;
-        }
-        .side ul li a:active {
-            background-color: #9E9E9E;
-        }
-        
 
+        /*.side > ul > li > a:hover */
+        .row a:hover {
+            background-color: #ddd;
+        }
+
+        /*.side > ul > li > a:active */
+        .row a:active {
+            background-color: #ccc;
+        }
+
+        @media screen and (max-width : 900px) {
+            .row {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                margin: 0;
+            }
+
+            .row a {
+                margin: 5px 0.25%;
+                flex: 49.5%;
+                width: 49.5%;
+            }
+        }
+
+        @media screen and (max-width : 700px) {
+            .row {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                margin: 0;
+            }
+
+            .row a {
+                margin: 5px 1%;
+                flex: 98%;
+                width: 98%;
+            }
+        }
     </style>
 </head>
 
@@ -73,60 +109,19 @@
     </header>
 
     <div class="row">
-        <div class="side">
-            <ul>
-                <li><a href="google.com"> hello </a></li>
-                <li><a href="google.com"> hello </a></li>
-                <li><a href="google.com"> hello </a></li>
-                <li><a href="google.com"> hello </a></li>
-                <li><a href="google.com"> hello </a></li>
-                <li><a href="google.com"> hello </a></li>
-                <li><a href="google.com"> hello </a></li>
-                <li><a href="google.com"> hello </a></li>
-            </ul>
-        </div>
-        <div class="main">
-            main content
-            <ul>
-                <li><a href="google.com"> hello </a></li>
-                <li><a href="google.com"> hello </a></li>
-                <li><a href="google.com"> hello </a></li>
-                <li><a href="google.com"> hello </a></li>
-                <li><a href="google.com"> hello </a></li>
-                <li><a href="google.com"> hello </a></li>
-                <li><a href="google.com"> hello </a></li>
-                <li><a href="google.com"> hello </a></li>
-                <li><a href="google.com"> hello </a></li>
-                <li><a href="google.com"> hello </a></li>
-                <li><a href="google.com"> hello </a></li>
-                <li><a href="google.com"> hello </a></li>
-                <li><a href="google.com"> hello </a></li>
-                <li><a href="google.com"> hello </a></li>
-                <li><a href="google.com"> hello </a></li>
-                <li><a href="google.com"> hello </a></li>
-                <li><a href="google.com"> hello </a></li>
-                <li><a href="google.com"> hello </a></li>
-                <li><a href="google.com"> hello </a></li>
-                <li><a href="google.com"> hello </a></li>
-                <li><a href="google.com"> hello </a></li>
-                <li><a href="google.com"> hello </a></li>
-                <li><a href="google.com"> hello </a></li>
-                <li><a href="google.com"> hello </a></li>
-                <li><a href="google.com"> hello </a></li>
-                <li><a href="google.com"> hello </a></li>
-                <li><a href="google.com"> hello </a></li>
-                <li><a href="google.com"> hello </a></li>
-                <li><a href="google.com"> hello </a></li>
-                <li><a href="google.com"> hello </a></li>
-                <li><a href="google.com"> hello </a></li>
-                <li><a href="google.com"> hello </a></li>
-            </ul>
-        </div>
-    </div>
 
-    <footer>
-        <h3>Footer</h3>
-    </footer>
+        <h3>Menu</h3>
+
+        <a href="./responsive_side_menu/"> Responsive side menu </a>
+
+        <a href="google.com"> hello </a>
+        <a href="google.com"> hello </a>
+        <a href="google.com"> hello </a>
+        <a href="google.com"> hello </a>
+        <a href="google.com"> hello </a>
+        <a href="google.com"> hello </a>
+        <a href="google.com"> hello </a>
+    </div>
 </body>
 
 </html>
