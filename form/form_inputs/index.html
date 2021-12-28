@@ -1,0 +1,176 @@
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        header {
+            background-color: #3F51B5;
+            color: white;
+            padding: 20px 40px;
+        }
+
+        footer {
+            background-color: #424242;
+            color: white;
+            padding: 20px 40px;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            /* remove margin from all heading text*/
+            margin: 0;
+        }
+
+        form .row input,
+        form .row select,
+        form .row textarea,
+        form .row fieldset {
+            padding: 10px;
+            flex: 98%;
+            width: 98%;
+            margin: 5px 1%;
+        }
+
+        form .row div {
+            flex: 98%;
+            width: 98%;
+        }
+
+        form .row {
+            margin: 0 25%;
+            width: 50%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        form .row h3,
+        form .row h4 {
+            margin: 5px 0.25%;
+            padding: 14px 40px;
+            flex: 100%;
+            width: 100%;
+        }
+
+        @media screen and (max-width : 700px) {
+            form .row {
+                width: 100%;
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>Form inputs</h2>
+    </header>
+    <form>
+
+        <div class="row">
+            <fieldset>
+                <legend>Inputs:</legend>
+                <textarea rows="5" cols="8" placeholder="textarea aith vertical resize only check style"></textarea>
+                <input placeholder="default input with datalist" list="browsers">
+                <datalist id="browsers">
+                    <option value="Internet Explorer">
+                    <option value="Firefox">
+                    <option value="Chrome">
+                    <option value="Opera">
+                    <option value="Safari">
+                </datalist>
+                <input type="text" placeholder="type: text">
+                <input type="password" placeholder="type: password">
+                <input type="email" placeholder="type: email">
+                <input type="number" placeholder="type: number" min="0" max="5">
+                <input type="search" placeholder="type: search">
+                <input type="tel" placeholder="type: tel">
+                <input type="url" placeholder="type: url">
+                <input type="time" placeholder="type: time">
+                <input type="date" placeholder="type: date">
+                <input type="week" placeholder="type: week">
+                <input type="month" placeholder="type: month">
+                <input type="datetime" placeholder="type: datetime">
+                <input type="datetime-local" placeholder="type: datetime-local">
+                <input type="hidden" placeholder="type: hidden">
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Others:</legend>
+                <input type="range" step="5" min="0" max="100">
+                <input type="image" step="5" min="0" max="100" style="height: 100px;">
+                <input type="file" step="5" min="0" max="100">
+                <input style="height: 40px;" type="color">
+
+                <label for="cars">Choose a car:</label>
+
+                <select id="cars" name="cars" size="1">
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="fiat">Fiat</option>
+                    <option value="audi">Audi</option>
+                </select>
+
+                <div>
+                    <input style="width: auto;" type="checkbox" id="confirm">
+                    <label for="confirm">confirm</label>
+                </div>
+                <div>
+                    <input style="width: auto;" type="checkbox" id="confirm_1">
+                    <label for="confirm_1">conditions apply</label>
+                </div>
+                <div>
+                    <input style="width: auto;" type="radio" id="male" name="gender">
+                    <label for="male">male</label>
+                </div>
+                <div>
+                    <input style="width: auto;" type="radio" id="female" name="gender">
+                    <label for="female">female</label>
+                </div>
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Buttons:</legend>
+                <input type="button" value="type: button">
+                <input type="submit">
+                <input type="reset">
+            </fieldset>
+
+        </div>
+    </form>
+    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        <div class="row">
+            <fieldset>
+                <legend>Output: Calculator:</legend>
+
+                <input type="range" id="a" name="a" value="50" min="0" max="100">
+                +
+                <input type="number" id="b" name="b" value="50">
+                =
+                <output name="x" for="a b"></output>
+                <br><br>
+                <input type="submit">
+            </fieldset>
+        </div>
+    </form>
+
+</body>
+
+</html>

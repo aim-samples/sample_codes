@@ -41,7 +41,8 @@
             display: flex;
             flex-wrap: wrap;
         }
-        .row h3 {
+        .row h3,
+        .row h4 {
             margin: 5px 0.25%;
             padding: 14px 40px;
             flex: 100%;
@@ -50,10 +51,10 @@
 
         /*.row > a */
         .row a {
-            margin: 5px 0.25%;
             display: block;
+            margin: 5px 0.25%;
             flex: 49.5%;
-            width: 49.5%;
+            max-width: 49.5%;
             padding: 14px 40px;
             text-decoration: none;
             color: #212121;
@@ -74,30 +75,24 @@
         @media screen and (max-width : 900px) {
             .row {
                 width: 100%;
-                display: flex;
-                flex-wrap: wrap;
                 margin: 0;
             }
 
             .row a {
-                margin: 5px 0.25%;
                 flex: 49.5%;
-                width: 49.5%;
+                max-width: 49.5%;
             }
         }
 
         @media screen and (max-width : 700px) {
             .row {
                 width: 100%;
-                display: flex;
-                flex-wrap: wrap;
                 margin: 0;
             }
-
             .row a {
                 margin: 5px 1%;
                 flex: 98%;
-                width: 98%;
+                max-width: 98%;
             }
         }
     </style>
@@ -111,14 +106,22 @@
     <div class="row">
 
         <h3>Menu</h3>
-        <a href="./responsive_side_bar/"> Responsive layout: with side bar </a>
-        <a href="./responsive_side_menu/"> Responsive layout: with side menu </a>
-        <a href="./responsive_form_using_flex/"> Responsive form: using flex</a>
-        <a href="./responsive_form_using_float/"> Responsive form: using float </a>
-        <a href="google.com"> hello </a>
-        <a href="google.com"> hello </a>
-        <a href="google.com"> hello </a>
-        <a href="google.com"> hello </a>
+        
+        <h4>Layout</h4>
+        <a href="./layout/sticky_header/">sticky header and footer</a>
+        <a href="./layout/responsive_side_bar/"> Responsive layout: with side bar </a>
+        <a href="./layout/responsive_side_menu/"> Responsive layout: with side menu </a>
+
+        <h4>Form</h4>
+        <a href="./form/form_inputs/">Form inputs</a>
+        <a href="./form/responsive_form_using_flex/"> Responsive form: using flex</a>
+        <a href="./form/responsive_form_using_float/"> Responsive form: using float </a>
+
+        <h4>Others</h4>
+        <a href=""> hello </a>
+        <a href=""> hello </a>
+        <a href=""> hello </a>
+        <a href=""> hello </a>
     </div>
 </body>
 
