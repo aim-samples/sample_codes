@@ -1,6 +1,7 @@
 <html>
 
 <head>
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <style>
@@ -10,19 +11,23 @@
 
         body {
             margin: 0;
-            font-family: Arial;
+            font-family: arial;
         }
 
         header {
             background-color: #3F51B5;
             color: white;
             padding: 20px 40px;
+            position: sticky;
+            top: 0;
         }
 
         footer {
             background-color: #424242;
             color: white;
             padding: 20px 40px;
+            position: sticky;
+            bottom: 0;
         }
 
         h1,
@@ -30,9 +35,8 @@
         h3,
         h4,
         h5,
-        h6,
-        p {
-            /* remove margin from all heading text and paragraph*/
+        h6 {
+            /* remove margin from all heading text*/
             margin: 0;
         }
 
@@ -42,22 +46,24 @@
         }
 
         .side {
-            padding: 10px;
-            flex: 25%;
+            flex: 100%;
             /*prevent overflowing outside flex*/
-            max-width: 25%;
+            max-width: 100%;
+            padding: 10px;
             background-color: #eee;
         }
+
 
         .side * {
             /* all childrens of .side but div*/
             padding: 10px;
         }
 
+
         .main {
-            flex: 75%;
+            flex: 100%;
             /*prevent overflowing outside flex*/
-            max-width: 75%;
+            max-width: 100%;
             padding: 10px;
         }
 
@@ -66,18 +72,14 @@
             padding: 10px;
         }
 
-
-        @media screen and (max-width : 600px) {
+        @media screen and (min-width : 600px) {
             .side {
-                flex: 100%;
-                max-width: 100%;
+                flex: 25%;
+                max-width: 25%;
             }
-
             .main {
-                flex: 100%;
-                max-width: 100%;
-                /*prevent overflowing outside flex*/
-                padding: 10px;
+                flex: 75%;
+                max-width: 75%;
             }
         }
     </style>
@@ -85,7 +87,7 @@
 
 <body>
     <header>
-        <h2>Responsive side bar</h2>
+        <h3>mobile first: for fast load on mobile devices</h3>
     </header>
 
     <div class="row">
@@ -135,7 +137,7 @@
     </div>
 
     <footer>
-        <h3>Footer</h3>
+        <h4>sticky footer</h4>
     </footer>
 </body>
 

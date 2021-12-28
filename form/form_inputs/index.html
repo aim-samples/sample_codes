@@ -20,12 +20,6 @@
             padding: 20px 40px;
         }
 
-        footer {
-            background-color: #424242;
-            color: white;
-            padding: 20px 40px;
-        }
-
         h1,
         h2,
         h3,
@@ -36,6 +30,13 @@
             margin: 0;
         }
 
+        form .row {
+            margin: 0 25%;
+            width: 50%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
         form .row input,
         form .row select,
         form .row textarea,
@@ -44,18 +45,15 @@
             flex: 98%;
             width: 98%;
             margin: 5px 1%;
+            resize: vertical;
         }
-
+        form .row input[type=file]{
+            resize: none;
+        }
+        
         form .row div {
             flex: 98%;
             width: 98%;
-        }
-
-        form .row {
-            margin: 0 25%;
-            width: 50%;
-            display: flex;
-            flex-wrap: wrap;
         }
 
         form .row h3,
@@ -78,7 +76,7 @@
 <body>
 
     <header>
-        <h2>Form inputs</h2>
+        <h2>Form inputs and output</h2>
     </header>
     <form>
 
@@ -112,7 +110,7 @@
 
 
             <fieldset>
-                <legend>Others:</legend>
+                <legend>Other inputs:</legend>
                 <input type="range" step="5" min="0" max="100">
                 <input type="image" step="5" min="0" max="100" style="height: 100px;">
                 <input type="file" step="5" min="0" max="100">
