@@ -1,0 +1,43 @@
+name: project_management
+description: A new Flutter application.
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^0.1.2
+  google_sign_in: ^4.0.11
+  firebase_auth: ^0.14.0+5
+  firebase_core: ^0.4.0+9
+  firebase_analytics: ^5.0.2
+  cloud_firestore: 0.12.9+6
+  intl: 0.16.0
+  shared_preferences: 0.5.4+3
+  get_it: 3.0.3
+  sticky_headers: 0.1.8+1
+  http: 0.12.0+2
+  cached_network_image: 2.0.0-rc
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+  fonts:
+    - family: Raleway
+      fonts:
+        - asset: assets/fonts/Raleway-Regular.ttf
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto-Regular.ttf
+        - asset: assets/fonts/Roboto-RegularItalic.ttf
+          style: italic
+    - family: FiraCode
+      fonts:
+        - asset: assets/fonts/FiraCode-Regular.ttf
