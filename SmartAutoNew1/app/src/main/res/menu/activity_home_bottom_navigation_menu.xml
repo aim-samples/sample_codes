@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bottom_navigation_item_sensors"
+        android:title="@string/sensors"
+        android:icon="@drawable/ic_device_hub_black_24dp"
+        android:checked="true" />
+    <item
+        android:id="@+id/bottom_navigation_item_maps"
+        android:title="@string/maps"
+        android:icon="@drawable/ic_navigation_black_24dp" />
+    <item
+        android:id="@+id/bottom_navigation_item_settings"
+        android:title="@string/settings"
+        android:icon="@drawable/ic_settings_black_24dp" />
+</menu>

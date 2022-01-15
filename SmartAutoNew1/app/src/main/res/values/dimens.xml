@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <dimen name="landscapeDrawerWidth">170sp</dimen>
+    <dimen name="Separator">3px</dimen>
+    <dimen name="Separator2px">2px</dimen>
+    <!--bottom navigation view override properties-->
+    <dimen name="design_bottom_navigation_text_size" tools:override="true">10dp</dimen>
+    <dimen name="design_bottom_navigation_active_text_size" tools:override="true">12dp</dimen>
+    <dimen name="design_bottom_navigation_height" tools:override="true">42dp</dimen>
+
+</resources>

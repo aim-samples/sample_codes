@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#37474F</color>
+    <color name="colorPrimaryDark">#37474F</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorWhiteTransparent">#80FFFFFF</color>
+    <color name="matOrange300">#FFB74D</color>
+    <color name="matLightGrey">#EEEEEE</color>
+    <color name="matGrey400">#BDBDBD</color>
+    <color name="matBlue800">#1565C0</color>
+    <color name="matRed800">#C62828</color>
+    <color name="matGreen700">#388E3C</color>
+    <color name="matGreen800">#2E7D32</color>
+</resources>
