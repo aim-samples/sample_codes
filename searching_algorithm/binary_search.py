@@ -6,7 +6,7 @@ myNum = 11
 
 def binarySearch(left, right):
     if right >= left:
-        middleIndex = (right + left) // 2
+        middleIndex = (right + left) // 2 # if result is 5.7 := 5
         if myNum == myList[middleIndex]:
             return middleIndex
         elif myNum > myList[middleIndex]:
@@ -18,3 +18,4 @@ def binarySearch(left, right):
 
 index = binarySearch(0, len(myList) - 1)
 print(index)
+
