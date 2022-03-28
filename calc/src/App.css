@@ -1,0 +1,35 @@
+.calculator{
+  height: 100%;
+  max-width: 600px;
+  margin: auto;
+  overflow: hidden;
+
+  display: flex;
+  flex-flow: column;
+}
+
+.display{
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  margin: 8px 4px;
+  padding: 20px;
+  font-size: 24px;
+  
+  justify-content: flex-end;
+  
+  flex: 1 1 auto;
+}
+.display h3 {
+  color: #424242;
+  font-weight: 400;
+  text-align: end;
+}
+.display h2 {
+  color: #323232;
+  font-weight: 400;
+  text-align: end;
+}
+
+.buttonpad{
+  flex: 0 0 auto;
+}

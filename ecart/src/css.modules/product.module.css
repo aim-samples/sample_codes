@@ -1,0 +1,50 @@
+.productbar{
+    height: 100px;
+    border: 1px solid #E0E0E0;
+    border-radius: 5px;
+    background-color: white;
+    margin: 4px;
+    display: flex;
+    flex-flow: row;
+    cursor: pointer;
+}
+.productbar:hover{
+    background-color: #E0E0E0;
+}
+
+.productbaricon{
+    flex: 0 0 100px;
+    padding: 10px;
+    max-width: 100px;
+}
+
+.productbardetails{
+    flex: 1 1 auto;
+    display: flex;
+    flex-flow: column;
+    padding-left: 20px;
+    justify-content: space-evenly;
+}
+.productbardetails h3{
+    font-weight: 400;
+    padding: 4px 0px;
+    color: #5C6BC0;
+}
+.productbardetails p{
+    line-height: 14px;
+    font-size: 14px;
+    color: #616161;
+}
+.productbardetails h4{
+    line-height: 40px;
+    font-weight: 500;
+    color: #212121;
+}
+.productbardeletebutton {
+    height: 50;
+    border: none;
+    padding: 10;
+    background: #ffffff00;
+    color: red; 
+    flex: 0 0 auto;
+}

@@ -1,0 +1,32 @@
+.headerbar{
+  position: sticky;
+  top: 0;
+
+  background-color: #5C6BC0;
+  line-height: 60px;
+  
+  display: flex;
+  justify-content: space-between;
+}
+  
+.headerTitle{
+  line-height: 60px;
+  margin-left: 20px;
+  
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+}
+
+.headerNavLink{
+  padding: 20px 20px;
+  font-size: 20px;
+  line-height: 60px;
+
+  text-decoration: none;
+  color: white;
+}
+
+.headerNavLink:hover{
+  background-color: #7986CB;
+}

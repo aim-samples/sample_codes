@@ -1,0 +1,23 @@
+
+.numberbutton{
+  font-size: 18px;
+  background-color: #E8EAF6;
+}
+.numberbutton:active{
+  background-color: #C5CAE9;
+}
+.equalsbutton{
+  font-size: 16px;
+  background-color: #5C6BC0;
+  color: white;
+}
+.equalsbutton:active{
+  background-color: #7986CB
+}
+.functionbutton{
+  font-size: 16px;
+  background-color: #C5CAE9;
+}
+.functionbutton:active{
+  background-color: #9FA8DA;
+}
